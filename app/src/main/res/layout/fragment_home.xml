@@ -4,23 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_green"
-    tools:context=".pertemuan_4.DashboardActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@color/primary_green"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Dashboard Bina Desa" />
+    android:background="@color/white_green">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +39,6 @@
                 android:layout_marginTop="24dp"
                 android:columnCount="2">
 
-                <!-- Card 1: Bangun Ruang (Legacy) -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card_bangun_ruang"
                     android:layout_width="0dp"
@@ -85,7 +72,6 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Card 2: Desktop View (WebView) -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card_web_view"
                     android:layout_width="0dp"
@@ -119,7 +105,6 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Card 3: Custom 1 -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card_custom_1"
                     android:layout_width="0dp"
@@ -153,7 +138,6 @@
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
 
-                <!-- Card 4: Custom 2 -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/card_custom_2"
                     android:layout_width="0dp"
@@ -189,7 +173,6 @@
 
             </GridLayout>
 
-            <!-- Logout Button -->
             <Button
                 android:id="@+id/btn_logout_alt"
                 android:layout_width="match_parent"

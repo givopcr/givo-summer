@@ -16,7 +16,14 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnLogin.setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
+            // Save login state
+            val sharedPref = getSharedPreferences("BinaDesaPrefs", android.content.Context.MODE_PRIVATE)
+            with(sharedPref.edit()) {
+                putBoolean("isLogin", true)
+                apply()
+            }
+
+            val intent = Intent(this, com.example.givo_summer.pertemuan_7.MainNavigationActivity::class.java)
             startActivity(intent)
             finish()
         }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,16 +20,12 @@
 
         <activity
             android:name=".pertemuan_2.BangunDatarActivity"
-            android:exported="true">
+            android:exported="false">
         </activity>
 
         <activity
             android:name=".pertemuan_3.LoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
 
         <activity
@@ -40,6 +38,23 @@
 
         <activity
             android:name=".pertemuan_4.DetailActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_7.MainNavigationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_6.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".pertemuan_6.WebViewActivity"
             android:exported="false" />
     </application>
 

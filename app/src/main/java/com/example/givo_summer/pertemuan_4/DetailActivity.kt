@@ -13,6 +13,12 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setSupportActionBar(binding.toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        binding.toolbar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         val title = intent.getStringExtra("EXTRA_TITLE") ?: "Detail"
         val desc = intent.getStringExtra("EXTRA_DESC") ?: ""
 

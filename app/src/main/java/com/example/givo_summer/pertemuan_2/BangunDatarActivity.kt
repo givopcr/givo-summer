@@ -22,6 +22,7 @@ class BangunDatarActivity : AppCompatActivity() {
 
     private lateinit var tvTitle: TextView
     private lateinit var tvDesc: TextView
+    private lateinit var toolbar: androidx.appcompat.widget.Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +43,13 @@ class BangunDatarActivity : AppCompatActivity() {
 
         tvTitle = findViewById(R.id.tv_title)
         tvDesc = findViewById(R.id.tv_desc)
+        toolbar = findViewById(R.id.toolbar)
+
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toolbar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
 
         val title = intent.getStringExtra("EXTRA_TITLE") ?: "Bangun Datar & Ruang"
         val desc = intent.getStringExtra("EXTRA_DESC") ?: "Hitung luas dan volume"

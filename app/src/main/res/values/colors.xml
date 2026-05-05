@@ -13,4 +13,11 @@
     <color name="card_2">#3B2E5B</color>
     <color name="card_3">#2E5B4A</color>
     <color name="logout_red">#E53935</color>
+
+    <!-- Bina Desa Palette -->
+    <color name="primary_green">#2E7D32</color>
+    <color name="primary_dark_green">#1B5E20</color>
+    <color name="secondary_green">#81C784</color>
+    <color name="surface_green">#F1F8E9</color>
+    <color name="white_green">#FAFAF5</color>
 </resources>
