@@ -20,6 +20,9 @@ class BangunDatarActivity : AppCompatActivity() {
     private lateinit var btnHitungKubus: Button
     private lateinit var tvHasilKubus: TextView
 
+    private lateinit var tvTitle: TextView
+    private lateinit var tvDesc: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bangun_datar)
@@ -36,6 +39,15 @@ class BangunDatarActivity : AppCompatActivity() {
         etSisi = findViewById(R.id.et_sisi)
         btnHitungKubus = findViewById(R.id.btn_hitung_kubus)
         tvHasilKubus = findViewById(R.id.tv_hasil_kubus)
+
+        tvTitle = findViewById(R.id.tv_title)
+        tvDesc = findViewById(R.id.tv_desc)
+
+        val title = intent.getStringExtra("EXTRA_TITLE") ?: "Bangun Datar & Ruang"
+        val desc = intent.getStringExtra("EXTRA_DESC") ?: "Hitung luas dan volume"
+
+        tvTitle.text = title
+        tvDesc.text = desc
 
         // Event Klik Hitung Segitiga
         btnHitungSegitiga.setOnClickListener {

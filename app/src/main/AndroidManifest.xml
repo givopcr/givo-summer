@@ -33,6 +33,14 @@
         <activity
             android:name=".pertemuan_3.WelcomeActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_4.DashboardActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_4.DetailActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
