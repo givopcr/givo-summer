@@ -29,6 +29,11 @@
         </activity>
 
         <activity
+            android:name=".pertemuan_3.RegisterActivity"
+            android:exported="false">
+        </activity>
+
+        <activity
             android:name=".pertemuan_3.WelcomeActivity"
             android:exported="false" />
 
