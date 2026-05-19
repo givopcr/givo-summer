@@ -36,7 +36,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
         binding.cardCustom1.setOnClickListener {
-            navigateToDetail("Custom Menu 1", "Ini adalah deskripsi untuk Custom Menu 1 yang dikirim dari Dashboard.")
+            startActivity(Intent(this, com.example.givo_summer.pertemuan_9.Pertemuan9Activity::class.java))
         }
 
         binding.cardCustom2.setOnClickListener {

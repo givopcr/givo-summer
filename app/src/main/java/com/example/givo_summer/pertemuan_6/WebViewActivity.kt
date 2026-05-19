@@ -25,7 +25,7 @@ class WebViewActivity : AppCompatActivity() {
         binding.webView.apply {
             settings.javaScriptEnabled = true
             webViewClient = WebViewClient()
-            loadUrl("https://givo.alwaysdata.net")
+            loadUrl("givo-2sic.alwaysdata.net")
         }
     }
 }

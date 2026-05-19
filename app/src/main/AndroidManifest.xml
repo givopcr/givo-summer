@@ -61,6 +61,14 @@
         <activity
             android:name=".pertemuan_6.WebViewActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_9.Pertemuan9Activity"
+            android:exported="false" />
+
+        <activity
+            android:name=".pertemuan_9.SettingsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

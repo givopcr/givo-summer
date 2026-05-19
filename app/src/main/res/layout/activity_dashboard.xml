@@ -147,7 +147,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="8dp"
-                            android:text="Custom 1"
+                            android:text="Pusat Info"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
                     </LinearLayout>
