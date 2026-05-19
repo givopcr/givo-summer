@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-//import com.example.givo_summer.databinding.ActivityPertemuan9Binding
+import com.example.givo_summer.databinding.ActivityPertemuan9Binding
 
 class Pertemuan9Activity : AppCompatActivity() {
 
