@@ -50,7 +50,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".pertemuan_6.SplashActivity"
+            android:name=".pertemuan_9.Pertemuan9Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,7 +63,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".pertemuan_9.Pertemuan9Activity"
+            android:name=".pertemuan_6.SplashActivity"
             android:exported="false" />
 
         <activity
