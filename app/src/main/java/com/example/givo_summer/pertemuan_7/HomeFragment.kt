@@ -13,6 +13,10 @@ import com.example.givo_summer.pertemuan_2.BangunDatarActivity
 import com.example.givo_summer.pertemuan_3.LoginActivity
 import com.example.givo_summer.pertemuan_4.DetailActivity
 import com.example.givo_summer.pertemuan_6.WebViewActivity
+import com.example.givo_summer.pertemuan_11.Pertemuan11Activity
+import com.example.givo_summer.pertemuan_12.Pertemuan12Activity
+import com.example.givo_summer.pertemuan_12.agenda.AgendaFormActivity
+import com.example.givo_summer.pertemuan_12.aspirasi.AspirasiFormActivity
 import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment() {
@@ -44,11 +48,19 @@ class HomeFragment : Fragment() {
         }
 
         binding.cardCustom1.setOnClickListener {
-            navigateToDetail("Custom Menu 1", "Ini adalah deskripsi untuk Custom Menu 1 yang dikirim dari Dashboard.")
+            startActivity(Intent(requireContext(), AspirasiFormActivity::class.java))
         }
 
         binding.cardCustom2.setOnClickListener {
-            navigateToDetail("Custom Menu 2", "Halaman ini menunjukkan implementasi pengiriman data antar Activity untuk Custom Menu 2.")
+            startActivity(Intent(requireContext(), AgendaFormActivity::class.java))
+        }
+
+        binding.cardPertemuan11.setOnClickListener {
+            startActivity(Intent(requireContext(), Pertemuan11Activity::class.java))
+        }
+
+        binding.cardPertemuan12.setOnClickListener {
+            startActivity(Intent(requireContext(), Pertemuan12Activity::class.java))
         }
 
         binding.btnLogoutAlt.setOnClickListener {
